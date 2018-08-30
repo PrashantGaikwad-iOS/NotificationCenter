@@ -8,6 +8,16 @@
 
 import UIKit
 
+// NotificationCenter
+
+//This is what happens:
+//
+//Component B tells NotificationCenter that it wants to observe a notification with addObserver(_:selector:name:object:)
+//Something happens in Component A, like data coming in or a task that completes
+//Component A creates a notification and posts it to the Notification Center
+//The Notification Center notifies Component B that a notification it observes has been posted by calling a selector on Component B
+//The selector is called, effectively executing a function of Component B
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

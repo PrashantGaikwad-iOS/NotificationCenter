@@ -12,6 +12,9 @@
 		8913D0F62137FE40001A4E72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8913D0F42137FE40001A4E72 /* Main.storyboard */; };
 		8913D0F82137FE44001A4E72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8913D0F72137FE44001A4E72 /* Assets.xcassets */; };
 		8913D0FB2137FE44001A4E72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8913D0F92137FE44001A4E72 /* LaunchScreen.storyboard */; };
+		8913D1032138035A001A4E72 /* pass-data-between-view-controllers-6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8913D1022138035A001A4E72 /* pass-data-between-view-controllers-6.jpg */; };
+		8913D10521380475001A4E72 /* ViewControllerFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913D10421380475001A4E72 /* ViewControllerFirst.swift */; };
+		8913D10721380483001A4E72 /* ViewControllerSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913D10621380483001A4E72 /* ViewControllerSecond.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		8913D0F72137FE44001A4E72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8913D0FA2137FE44001A4E72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8913D0FC2137FE44001A4E72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8913D1022138035A001A4E72 /* pass-data-between-view-controllers-6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pass-data-between-view-controllers-6.jpg"; sourceTree = "<group>"; };
+		8913D10421380475001A4E72 /* ViewControllerFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFirst.swift; sourceTree = "<group>"; };
+		8913D10621380483001A4E72 /* ViewControllerSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSecond.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +60,11 @@
 		8913D0EF2137FE40001A4E72 /* NotificationCenter */ = {
 			isa = PBXGroup;
 			children = (
+				8913D1022138035A001A4E72 /* pass-data-between-view-controllers-6.jpg */,
 				8913D0F02137FE40001A4E72 /* AppDelegate.swift */,
 				8913D0F22137FE40001A4E72 /* ViewController.swift */,
+				8913D10421380475001A4E72 /* ViewControllerFirst.swift */,
+				8913D10621380483001A4E72 /* ViewControllerSecond.swift */,
 				8913D0F42137FE40001A4E72 /* Main.storyboard */,
 				8913D0F72137FE44001A4E72 /* Assets.xcassets */,
 				8913D0F92137FE44001A4E72 /* LaunchScreen.storyboard */,
@@ -125,6 +134,7 @@
 				8913D0FB2137FE44001A4E72 /* LaunchScreen.storyboard in Resources */,
 				8913D0F82137FE44001A4E72 /* Assets.xcassets in Resources */,
 				8913D0F62137FE40001A4E72 /* Main.storyboard in Resources */,
+				8913D1032138035A001A4E72 /* pass-data-between-view-controllers-6.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8913D10721380483001A4E72 /* ViewControllerSecond.swift in Sources */,
 				8913D0F32137FE40001A4E72 /* ViewController.swift in Sources */,
 				8913D0F12137FE40001A4E72 /* AppDelegate.swift in Sources */,
+				8913D10521380475001A4E72 /* ViewControllerFirst.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H28X75MLUY;
 				INFOPLIST_FILE = NotificationCenter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,6 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H28X75MLUY;
 				INFOPLIST_FILE = NotificationCenter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
