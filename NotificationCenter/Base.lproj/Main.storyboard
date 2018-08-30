@@ -21,7 +21,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9GP-a8-iGH">
                                 <rect key="frame" x="116" y="318" width="144" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="SECOND"/>
+                                <state key="normal" title="Go to SECOND VC"/>
                                 <connections>
                                     <segue destination="OLr-aT-fCQ" kind="show" id="n2U-pq-CML"/>
                                 </connections>
@@ -36,16 +36,16 @@
             </objects>
             <point key="canvasLocation" x="349.60000000000002" y="-19.340329835082461"/>
         </scene>
-        <!--View Controller Second-->
+        <!--Second VC-->
         <scene sceneID="1gQ-dV-Uk1">
             <objects>
-                <viewController id="OLr-aT-fCQ" customClass="ViewControllerSecond" customModule="NotificationCenter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Second VC" id="OLr-aT-fCQ" customClass="ViewControllerSecond" customModule="NotificationCenter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fmV-xl-UMc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Second" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Bi-Da-ph7">
-                                <rect key="frame" x="166" y="323" width="59" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Second" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Bi-Da-ph7">
+                                <rect key="frame" x="109" y="323" width="152" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -54,7 +54,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSd-p3-NoU">
                                 <rect key="frame" x="134" y="174" width="127" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="First"/>
+                                <state key="normal" title="Go to FIRST VC"/>
                                 <connections>
                                     <segue destination="WEe-ZH-uZg" kind="show" id="xrC-FX-BzC"/>
                                 </connections>
@@ -66,18 +66,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RKM-13-kmZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1201" y="-19"/>
+            <point key="canvasLocation" x="1200.8" y="-19.340329835082461"/>
         </scene>
-        <!--View Controller First-->
+        <!--First VC-->
         <scene sceneID="KUw-vg-2V3">
             <objects>
-                <viewController id="WEe-ZH-uZg" customClass="ViewControllerFirst" customModule="NotificationCenter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="First VC" id="WEe-ZH-uZg" customClass="ViewControllerFirst" customModule="NotificationCenter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jhR-rQ-TOE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hb4-RB-xxA">
-                                <rect key="frame" x="166" y="323" width="34" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hb4-RB-xxA">
+                                <rect key="frame" x="123" y="323" width="129" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -90,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M4e-Jb-aDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2004" y="-19"/>
+            <point key="canvasLocation" x="2004" y="-19.340329835082461"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Jx1-2w-F2S">

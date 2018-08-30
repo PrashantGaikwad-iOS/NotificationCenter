@@ -19,25 +19,18 @@ class ViewControllerSecond: ViewController {
 
         NotificationCenter.default.addObserver(self, selector: #selector(taskCompleted(_:)), name: .didCompleteTask, object: nil)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(self.rxUpdateForJob), name: NSNotification.Name(rawValue: "NotifyJobRx"), object: nil)
-        
     }
     
     @objc func taskCompleted(_ notification: Notification) {
-        print("task completed called")
+        print("task completed called - Second VC")
     }
     
-    @objc func rxUpdateForJob(_ notification: Notification) {
-        print("rxupdate for job called")
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: "NotifyJobRx"), object: nil)
         NotificationCenter.default.removeObserver(self, name: .didCompleteTask, object: nil)
     }
     
@@ -46,8 +39,11 @@ class ViewControllerSecond: ViewController {
 
 
 
-
-
-
-
+//NotificationCenter.default.addObserver(self, selector: #selector(self.rxUpdateForJob), name: NSNotification.Name(rawValue: "NotifyJobRx"), object: nil)
+//
+//@objc func rxUpdateForJob(_ notification: Notification) {
+//    print("rxupdate for job called")
+//}
+//
+//NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: "NotifyJobRx"), object: nil)
 

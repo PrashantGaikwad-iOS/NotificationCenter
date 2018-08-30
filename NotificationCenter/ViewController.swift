@@ -20,12 +20,14 @@ class ViewController: UIViewController {
         
         notificationCenter.addObserver(self, selector: #selector(appEnterInForeground), name: Notification.Name.UIApplicationDidBecomeActive, object: nil)
         
+        NotificationCenter.default.addObserver(self, selector: #selector(taskCompletedOfSecond(_:)), name: .didCompleteTask, object: nil)
         
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        
+    @objc func taskCompletedOfSecond(_ notification: Notification) {
+        print("task completed called - Initial VC")
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -42,10 +44,9 @@ class ViewController: UIViewController {
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-        
         NotificationCenter.default.removeObserver(self, name: Notification.Name.UIApplicationDidEnterBackground, object: nil)
         NotificationCenter.default.removeObserver(self, name: Notification.Name.UIApplicationDidBecomeActive, object: nil)
-        
+        NotificationCenter.default.removeObserver(self, name: .didCompleteTask, object: nil)
     }
 
 }
